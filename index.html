@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Price Checker</title>
+    <link rel="stylesheet" href="site/styles.css">
+    <script src="site/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Game Price Checker</h1>
+        <h5>by Region Flex</h5>
+        <input type="text" id="gameUrlInput" placeholder="Введите ссылку на игру...">
+        <button onclick="checkGamePrice()">Проверить цену</button>
+        <div id="loading">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <h2 id="gameTitle"></h2>
+        <table id="priceTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Регион</th>
+                    <th>Цена в регионе</th>
+                    <th>В рублях*</th>
+                </tr>
+            </thead>
+            <tbody id="priceTableBody">
+                <!-- Цены будут отображены тут -->
+            </tbody>
+        </table>
+        <p>Цены на сайте могут меняться в любой момент. Проверяйте сумму пополнения в боте. </p>
+        <p>Текущие скидки и специальные предложения не учитываются.</p>
+        <p>Прочерк в поле означает, что игра недоступна в регионе.</p>
+        <p>*Без учета комиссии и банковских издержек.</p>
+    </div>
+</body>
+</html>
+<footer>
+    <!-- <p>© 2024 Region Flex</p> -->
+</footer>
